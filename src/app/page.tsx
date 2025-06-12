@@ -222,13 +222,13 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
               <div className="space-y-4">
-                <Badge className="px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 border-indigo-200 font-semibold">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-blue-100 to-orange-100 text-blue-900 border-blue-200 font-semibold">
                   How It Works
                 </Badge>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
                   Your path to success
                   <br />
-                  <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
                     starts here
                   </span>
                 </h2>
@@ -239,10 +239,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
-              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-indigo-50 to-indigo-100">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 to-purple-600/5"></div>
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-blue-50 to-blue-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/5 to-blue-600/5"></div>
                 <CardHeader className="relative p-8">
-                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <BookOpen className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
@@ -282,10 +282,10 @@ export default function HomePage() {
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-purple-50 to-pink-100">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5"></div>
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-orange-50 to-orange-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-600/5"></div>
                 <CardHeader className="relative p-8">
-                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <MessageSquare className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
@@ -325,10 +325,10 @@ export default function HomePage() {
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-emerald-50 to-teal-100">
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/5 to-teal-600/5"></div>
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-slate-50 to-slate-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/5 to-orange-500/5"></div>
                 <CardHeader className="relative p-8">
-                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-900 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Trophy className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
