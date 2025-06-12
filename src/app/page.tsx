@@ -215,100 +215,155 @@ export default function HomePage() {
         </section>
 
         {/* Features Section */}
-        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
+        <section
+          id="how-it-works"
+          className="w-full py-20 md:py-32 lg:py-40 bg-white"
+        >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <Badge
-                  variant="outline"
-                  className="border-primary text-primary"
-                >
+            <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
+              <div className="space-y-4">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 border-indigo-200 font-semibold">
                   How It Works
                 </Badge>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                  Your path to success starts here
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+                  Your path to success
+                  <br />
+                  <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    starts here
+                  </span>
                 </h2>
-                <p className="max-w-[900px] text-gray-600 md:text-xl">
+                <p className="max-w-[800px] text-gray-700 text-xl md:text-2xl leading-relaxed font-medium">
                   Get personalized guidance from college athletes and coaches
                   who understand what it takes to succeed.
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-6xl items-start gap-8 py-12 lg:grid-cols-3">
-              <Card className="border-2 hover:border-primary/20 transition-colors">
-                <CardHeader>
-                  <BookOpen className="h-12 w-12 text-primary mb-2" />
-                  <CardTitle className="text-xl">Choose Your Course</CardTitle>
-                  <CardDescription className="text-base">
+            <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-indigo-50 to-indigo-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 to-purple-600/5"></div>
+                <CardHeader className="relative p-8">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <BookOpen className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
+                    Choose Your Course
+                  </CardTitle>
+                  <CardDescription className="text-lg text-gray-700 leading-relaxed">
                     Browse courses in academics, athletics, leadership, and life
                     skills designed specifically for high schoolers.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Academic subjects & test prep
+                <CardContent className="relative p-8 pt-0">
+                  <ul className="space-y-4">
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Academic subjects & test prep
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Athletic training & nutrition
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Athletic training & nutrition
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Leadership & communication
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Leadership & communication
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-2 hover:border-secondary/20 transition-colors">
-                <CardHeader>
-                  <MessageSquare className="h-12 w-12 text-secondary mb-2" />
-                  <CardTitle className="text-xl">Get Expert Feedback</CardTitle>
-                  <CardDescription className="text-base">
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-purple-50 to-pink-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5"></div>
+                <CardHeader className="relative p-8">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <MessageSquare className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
+                    Get Expert Feedback
+                  </CardTitle>
+                  <CardDescription className="text-lg text-gray-700 leading-relaxed">
                     Receive personalized feedback and guidance from college
                     athletes and experienced coaches.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      1-on-1 video sessions
+                <CardContent className="relative p-8 pt-0">
+                  <ul className="space-y-4">
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        1-on-1 video sessions
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Written feedback on assignments
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Written feedback on assignments
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Goal setting & progress tracking
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Goal setting & progress tracking
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-2 hover:border-primary/20 transition-colors">
-                <CardHeader>
-                  <Trophy className="h-12 w-12 text-primary mb-2" />
-                  <CardTitle className="text-xl">Achieve Your Goals</CardTitle>
-                  <CardDescription className="text-base">
+              <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-emerald-50 to-teal-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/5 to-teal-600/5"></div>
+                <CardHeader className="relative p-8">
+                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Trophy className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-gray-900 mb-3">
+                    Achieve Your Goals
+                  </CardTitle>
+                  <CardDescription className="text-lg text-gray-700 leading-relaxed">
                     Build confidence, improve skills, and prepare for college
                     applications and athletic recruitment.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      College application prep
+                <CardContent className="relative p-8 pt-0">
+                  <ul className="space-y-4">
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        College application prep
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Athletic recruitment guidance
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Athletic recruitment guidance
+                      </span>
                     </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Scholarship opportunities
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-4 w-4 text-emerald-600" />
+                      </div>
+                      <span className="text-gray-700 font-medium">
+                        Scholarship opportunities
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
