@@ -179,7 +179,7 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-indigo-600 to-indigo-700 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent mb-2">
                   10,000+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
@@ -187,7 +187,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-2">
                   500+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
@@ -195,7 +195,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent mb-2">
                   50+
                 </div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
