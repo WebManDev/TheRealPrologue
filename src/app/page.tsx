@@ -375,125 +375,135 @@ export default function HomePage() {
         {/* Testimonials */}
         <section
           id="testimonials"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-50"
+          className="w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-gray-50 to-gray-100"
         >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <Badge
-                  variant="outline"
-                  className="border-secondary text-secondary"
-                >
+            <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
+              <div className="space-y-4">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 border-purple-200 font-semibold">
                   Success Stories
                 </Badge>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                  What students are saying
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+                  What students are
+                  <br />
+                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    saying
+                  </span>
                 </h2>
               </div>
             </div>
-            <div className="mx-auto grid max-w-6xl items-start gap-6 py-12 lg:grid-cols-3">
-              <Card className="bg-white">
-                <CardHeader>
-                  <div className="flex items-center space-x-1">
+            <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
+              <Card className="bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                <CardHeader className="p-8">
+                  <div className="flex items-center space-x-1 mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star
                         key={star}
-                        className="h-4 w-4 fill-secondary text-secondary"
+                        className="h-5 w-5 fill-amber-400 text-amber-400"
                       />
                     ))}
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
+                <CardContent className="p-8 pt-0">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-6 font-medium">
                     "My mentor helped me improve my SAT score by 200 points and
                     gave me amazing advice for my college applications. I got
                     into my dream school!"
                   </p>
-                  <div className="flex items-center space-x-3">
-                    <Image
-                      src="/placeholder.svg?height=40&width=40"
-                      width={40}
-                      height={40}
-                      alt="Student avatar"
-                      className="rounded-full"
-                    />
+                  <div className="flex items-center space-x-4">
+                    <div className="relative">
+                      <Image
+                        src="/placeholder.svg?height=50&width=50"
+                        width={50}
+                        height={50}
+                        alt="Student avatar"
+                        className="rounded-full border-2 border-indigo-100"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-full"></div>
+                    </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-900">
+                      <p className="font-bold text-gray-900 text-lg">
                         Emma Rodriguez
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-gray-600 font-medium">
                         Junior, Lincoln High School
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-white">
-                <CardHeader>
-                  <div className="flex items-center space-x-1">
+              <Card className="bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                <CardHeader className="p-8">
+                  <div className="flex items-center space-x-1 mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star
                         key={star}
-                        className="h-4 w-4 fill-secondary text-secondary"
+                        className="h-5 w-5 fill-amber-400 text-amber-400"
                       />
                     ))}
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
+                <CardContent className="p-8 pt-0">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-6 font-medium">
                     "The athletic training course and feedback from a D1 soccer
                     player completely changed my game. I made varsity this
                     year!"
                   </p>
-                  <div className="flex items-center space-x-3">
-                    <Image
-                      src="/placeholder.svg?height=40&width=40"
-                      width={40}
-                      height={40}
-                      alt="Student avatar"
-                      className="rounded-full"
-                    />
+                  <div className="flex items-center space-x-4">
+                    <div className="relative">
+                      <Image
+                        src="/placeholder.svg?height=50&width=50"
+                        width={50}
+                        height={50}
+                        alt="Student avatar"
+                        className="rounded-full border-2 border-purple-100"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full"></div>
+                    </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-900">
+                      <p className="font-bold text-gray-900 text-lg">
                         Marcus Johnson
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-gray-600 font-medium">
                         Sophomore, Central High School
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-white">
-                <CardHeader>
-                  <div className="flex items-center space-x-1">
+              <Card className="bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                <CardHeader className="p-8">
+                  <div className="flex items-center space-x-1 mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star
                         key={star}
-                        className="h-4 w-4 fill-secondary text-secondary"
+                        className="h-5 w-5 fill-amber-400 text-amber-400"
                       />
                     ))}
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
+                <CardContent className="p-8 pt-0">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-6 font-medium">
                     "Prologue helped me build confidence in public speaking and
                     leadership. I'm now student body president and feel ready
                     for college!"
                   </p>
-                  <div className="flex items-center space-x-3">
-                    <Image
-                      src="/placeholder.svg?height=40&width=40"
-                      width={40}
-                      height={40}
-                      alt="Student avatar"
-                      className="rounded-full"
-                    />
+                  <div className="flex items-center space-x-4">
+                    <div className="relative">
+                      <Image
+                        src="/placeholder.svg?height=50&width=50"
+                        width={50}
+                        height={50}
+                        alt="Student avatar"
+                        className="rounded-full border-2 border-emerald-100"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-teal-600/20 rounded-full"></div>
+                    </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-900">
+                      <p className="font-bold text-gray-900 text-lg">
                         Aisha Patel
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-gray-600 font-medium">
                         Senior, Westfield High School
                       </p>
                     </div>
