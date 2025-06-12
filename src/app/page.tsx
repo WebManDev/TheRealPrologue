@@ -1,39 +1,80 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, CheckCircle, Star, BookOpen, Trophy, MessageSquare } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowRight,
+  CheckCircle,
+  Star,
+  BookOpen,
+  Trophy,
+  MessageSquare,
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b border-gray-200 bg-white">
-        <Link className="flex items-center justify-center" href="#">
-          <BookOpen className="h-8 w-8 text-primary" />
-          <span className="ml-2 text-xl font-bold text-primary">Prologue</span>
+      <header className="sticky top-0 z-50 px-4 lg:px-6 h-20 flex items-center backdrop-blur-lg bg-white/80 border-b border-gray-100 shadow-sm">
+        <Link className="flex items-center justify-center group" href="#">
+          <div className="relative">
+            <BookOpen className="h-9 w-9 text-indigo-600 group-hover:text-indigo-700 transition-colors duration-200" />
+            <div className="absolute inset-0 bg-indigo-600/20 rounded-full blur-lg group-hover:bg-indigo-700/30 transition-all duration-200 -z-10"></div>
+          </div>
+          <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            Prologue
+          </span>
         </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="#courses">
+        <nav className="ml-auto flex gap-8">
+          <Link
+            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            href="#courses"
+          >
             Courses
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="#mentors">
+          <Link
+            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            href="#mentors"
+          >
             Mentors
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="#how-it-works">
+          <Link
+            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            href="#how-it-works"
+          >
             How It Works
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
           </Link>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="#testimonials">
+          <Link
+            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            href="#testimonials"
+          >
             Success Stories
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
           </Link>
         </nav>
-        <div className="ml-6 flex gap-2">
-          <Button variant="outline" size="sm">
+        <div className="ml-8 flex gap-3">
+          <Button
+            variant="outline"
+            size="sm"
+            className="border-gray-300 hover:border-indigo-300 hover:bg-indigo-50 text-gray-700 hover:text-indigo-700 font-semibold transition-all duration-200"
+          >
             Log In
           </Button>
-          <Button size="sm" className="bg-secondary hover:bg-secondary/90">
+          <Button
+            size="sm"
+            className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+          >
             Sign Up
           </Button>
         </div>
@@ -45,7 +86,10 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
-                <Badge variant="secondary" className="mb-4 bg-secondary text-white">
+                <Badge
+                  variant="secondary"
+                  className="mb-4 bg-secondary text-white"
+                >
                   🎓 Trusted by 10,000+ Students
                 </Badge>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
@@ -55,12 +99,16 @@ export default function HomePage() {
                   <span className="text-secondary">& Expert Coaches</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 text-lg md:text-xl">
-                  Take courses designed for high schoolers and get personalized feedback from college athletes and
-                  coaches. Build skills, gain confidence, and prepare for your future.
+                  Take courses designed for high schoolers and get personalized
+                  feedback from college athletes and coaches. Build skills, gain
+                  confidence, and prepare for your future.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="h-12 px-8 bg-primary hover:bg-primary/90">
+                <Button
+                  size="lg"
+                  className="h-12 px-8 bg-primary hover:bg-primary/90"
+                >
                   Start Learning Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -134,14 +182,18 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <Badge variant="outline" className="border-primary text-primary">
+                <Badge
+                  variant="outline"
+                  className="border-primary text-primary"
+                >
                   How It Works
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
                   Your path to success starts here
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl">
-                  Get personalized guidance from college athletes and coaches who understand what it takes to succeed.
+                  Get personalized guidance from college athletes and coaches
+                  who understand what it takes to succeed.
                 </p>
               </div>
             </div>
@@ -151,8 +203,8 @@ export default function HomePage() {
                   <BookOpen className="h-12 w-12 text-primary mb-2" />
                   <CardTitle className="text-xl">Choose Your Course</CardTitle>
                   <CardDescription className="text-base">
-                    Browse courses in academics, athletics, leadership, and life skills designed specifically for high
-                    schoolers.
+                    Browse courses in academics, athletics, leadership, and life
+                    skills designed specifically for high schoolers.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -177,7 +229,8 @@ export default function HomePage() {
                   <MessageSquare className="h-12 w-12 text-secondary mb-2" />
                   <CardTitle className="text-xl">Get Expert Feedback</CardTitle>
                   <CardDescription className="text-base">
-                    Receive personalized feedback and guidance from college athletes and experienced coaches.
+                    Receive personalized feedback and guidance from college
+                    athletes and experienced coaches.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -202,7 +255,8 @@ export default function HomePage() {
                   <Trophy className="h-12 w-12 text-primary mb-2" />
                   <CardTitle className="text-xl">Achieve Your Goals</CardTitle>
                   <CardDescription className="text-base">
-                    Build confidence, improve skills, and prepare for college applications and athletic recruitment.
+                    Build confidence, improve skills, and prepare for college
+                    applications and athletic recruitment.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -227,11 +281,17 @@ export default function HomePage() {
         </section>
 
         {/* Testimonials */}
-        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section
+          id="testimonials"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <Badge variant="outline" className="border-secondary text-secondary">
+                <Badge
+                  variant="outline"
+                  className="border-secondary text-secondary"
+                >
                   Success Stories
                 </Badge>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
@@ -244,14 +304,18 @@ export default function HomePage() {
                 <CardHeader>
                   <div className="flex items-center space-x-1">
                     {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="h-4 w-4 fill-secondary text-secondary" />
+                      <Star
+                        key={star}
+                        className="h-4 w-4 fill-secondary text-secondary"
+                      />
                     ))}
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    "My mentor helped me improve my SAT score by 200 points and gave me amazing advice for my college
-                    applications. I got into my dream school!"
+                    "My mentor helped me improve my SAT score by 200 points and
+                    gave me amazing advice for my college applications. I got
+                    into my dream school!"
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
@@ -262,8 +326,12 @@ export default function HomePage() {
                       className="rounded-full"
                     />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Emma Rodriguez</p>
-                      <p className="text-xs text-gray-500">Junior, Lincoln High School</p>
+                      <p className="text-sm font-medium text-gray-900">
+                        Emma Rodriguez
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        Junior, Lincoln High School
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -272,14 +340,18 @@ export default function HomePage() {
                 <CardHeader>
                   <div className="flex items-center space-x-1">
                     {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="h-4 w-4 fill-secondary text-secondary" />
+                      <Star
+                        key={star}
+                        className="h-4 w-4 fill-secondary text-secondary"
+                      />
                     ))}
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    "The athletic training course and feedback from a D1 soccer player completely changed my game. I
-                    made varsity this year!"
+                    "The athletic training course and feedback from a D1 soccer
+                    player completely changed my game. I made varsity this
+                    year!"
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
@@ -290,8 +362,12 @@ export default function HomePage() {
                       className="rounded-full"
                     />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Marcus Johnson</p>
-                      <p className="text-xs text-gray-500">Sophomore, Central High School</p>
+                      <p className="text-sm font-medium text-gray-900">
+                        Marcus Johnson
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        Sophomore, Central High School
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -300,14 +376,18 @@ export default function HomePage() {
                 <CardHeader>
                   <div className="flex items-center space-x-1">
                     {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="h-4 w-4 fill-secondary text-secondary" />
+                      <Star
+                        key={star}
+                        className="h-4 w-4 fill-secondary text-secondary"
+                      />
                     ))}
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    "Prologue helped me build confidence in public speaking and leadership. I'm now student body
-                    president and feel ready for college!"
+                    "Prologue helped me build confidence in public speaking and
+                    leadership. I'm now student body president and feel ready
+                    for college!"
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
@@ -318,8 +398,12 @@ export default function HomePage() {
                       className="rounded-full"
                     />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Aisha Patel</p>
-                      <p className="text-xs text-gray-500">Senior, Westfield High School</p>
+                      <p className="text-sm font-medium text-gray-900">
+                        Aisha Patel
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        Senior, Westfield High School
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -333,10 +417,13 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center text-white">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to start your journey?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Ready to start your journey?
+                </h2>
                 <p className="mx-auto max-w-[600px] text-white/90 text-lg">
-                  Join thousands of high schoolers who are already building their future with expert guidance from
-                  college athletes and coaches.
+                  Join thousands of high schoolers who are already building
+                  their future with expert guidance from college athletes and
+                  coaches.
                 </p>
               </div>
               <div className="w-full max-w-md space-y-4">
@@ -346,11 +433,17 @@ export default function HomePage() {
                     placeholder="Enter your email"
                     type="email"
                   />
-                  <Button type="submit" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
+                  <Button
+                    type="submit"
+                    variant="secondary"
+                    className="bg-white text-primary hover:bg-gray-100"
+                  >
                     Get Started
                   </Button>
                 </form>
-                <p className="text-sm text-white/80">Start your free trial today. No credit card required.</p>
+                <p className="text-sm text-white/80">
+                  Start your free trial today. No credit card required.
+                </p>
               </div>
             </div>
           </div>
@@ -363,22 +456,36 @@ export default function HomePage() {
           <BookOpen className="h-5 w-5 text-primary mr-2" />
           <span className="text-sm font-medium text-primary">Prologue</span>
         </div>
-        <p className="text-xs text-gray-500 sm:ml-4">© 2024 Prologue. Empowering the next generation.</p>
+        <p className="text-xs text-gray-500 sm:ml-4">
+          © 2024 Prologue. Empowering the next generation.
+        </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:text-primary transition-colors" href="#">
+          <Link
+            className="text-xs hover:text-primary transition-colors"
+            href="#"
+          >
             Privacy Policy
           </Link>
-          <Link className="text-xs hover:text-primary transition-colors" href="#">
+          <Link
+            className="text-xs hover:text-primary transition-colors"
+            href="#"
+          >
             Terms of Service
           </Link>
-          <Link className="text-xs hover:text-primary transition-colors" href="#">
+          <Link
+            className="text-xs hover:text-primary transition-colors"
+            href="#"
+          >
             Contact Us
           </Link>
-          <Link className="text-xs hover:text-primary transition-colors" href="#">
+          <Link
+            className="text-xs hover:text-primary transition-colors"
+            href="#"
+          >
             Help Center
           </Link>
         </nav>
       </footer>
     </div>
-  )
+  );
 }
