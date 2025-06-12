@@ -84,27 +84,27 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
           {/* Background with modern gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/5 via-transparent to-purple-600/5"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/5 via-transparent to-orange-500/5"></div>
 
           {/* Animated background elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 bg-indigo-200/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
           <div className="container relative px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6">
-                <Badge className="px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 border-indigo-200 shadow-sm font-semibold text-sm">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-blue-100 to-orange-100 text-blue-900 border-blue-200 shadow-sm font-semibold text-sm">
                   🎓 Trusted by 10,000+ Students Worldwide
                 </Badge>
                 <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
                   Learn from
-                  <span className="bg-gradient-to-r from-indigo-600 to-indigo-800 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent">
                     {" "}
                     College Athletes
                   </span>
                   <br />
-                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
                     & Expert Coaches
                   </span>
                 </h1>
@@ -117,7 +117,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="h-14 px-10 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
+                  className="h-14 px-10 text-lg font-semibold bg-gradient-to-r from-blue-900 to-orange-500 hover:from-blue-800 hover:to-orange-600 text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Start Learning Today
                   <ArrowRight className="ml-3 h-6 w-6" />
@@ -125,7 +125,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-14 px-10 text-lg font-semibold border-2 border-indigo-300 text-indigo-700 hover:bg-indigo-50 hover:border-indigo-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                  className="h-14 px-10 text-lg font-semibold border-2 border-blue-300 text-blue-900 hover:bg-blue-50 hover:border-blue-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Browse Courses
                 </Button>
