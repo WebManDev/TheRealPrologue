@@ -515,37 +515,56 @@ export default function HomePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-primary to-secondary">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-6 text-center text-white">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Ready to start your journey?
+        <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
+          {/* Modern gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+
+          {/* Animated background elements */}
+          <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-60 h-60 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+          <div className="container relative px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-8 text-center text-white">
+              <div className="space-y-6">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                  Ready to start your
+                  <br />
+                  <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                    journey?
+                  </span>
                 </h2>
-                <p className="mx-auto max-w-[600px] text-white/90 text-lg">
+                <p className="mx-auto max-w-[700px] text-white/90 text-xl md:text-2xl leading-relaxed font-medium">
                   Join thousands of high schoolers who are already building
                   their future with expert guidance from college athletes and
                   coaches.
                 </p>
               </div>
-              <div className="w-full max-w-md space-y-4">
-                <form className="flex gap-2">
+              <div className="w-full max-w-lg space-y-6">
+                <form className="flex flex-col sm:flex-row gap-4">
                   <Input
-                    className="flex-1 bg-white text-gray-900 border-0"
-                    placeholder="Enter your email"
+                    className="flex-1 h-14 px-6 bg-white/95 backdrop-blur-sm text-gray-900 border-0 shadow-lg text-lg placeholder:text-gray-500 focus:bg-white transition-all duration-200"
+                    placeholder="Enter your email address"
                     type="email"
                   />
                   <Button
                     type="submit"
-                    variant="secondary"
-                    className="bg-white text-primary hover:bg-gray-100"
+                    size="lg"
+                    className="h-14 px-8 bg-white text-indigo-600 hover:bg-gray-100 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    Get Started
+                    Get Started Free
                   </Button>
                 </form>
-                <p className="text-sm text-white/80">
-                  Start your free trial today. No credit card required.
-                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5 text-emerald-300" />
+                    <span className="font-medium">Free trial available</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5 text-emerald-300" />
+                    <span className="font-medium">No credit card required</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
