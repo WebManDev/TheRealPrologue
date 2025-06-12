@@ -157,16 +157,19 @@ export default function HomePage() {
         </section>
 
         {/* Hero Image */}
-        <section className="w-full py-12">
+        <section className="w-full py-16">
           <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-5xl">
-              <Image
-                src="/placeholder.svg?height=500&width=900"
-                width={900}
-                height={500}
-                alt="Students learning with college athlete mentors"
-                className="rounded-xl border shadow-2xl"
-              />
+            <div className="mx-auto max-w-6xl">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-2xl blur-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                <Image
+                  src="/placeholder.svg?height=500&width=900"
+                  width={900}
+                  height={500}
+                  alt="Students learning with college athlete mentors"
+                  className="relative rounded-2xl border-2 border-white shadow-2xl hover:shadow-3xl transition-all duration-300 transform group-hover:-translate-y-2"
+                />
+              </div>
             </div>
           </div>
         </section>
