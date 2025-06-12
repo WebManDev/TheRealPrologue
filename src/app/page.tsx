@@ -82,56 +82,74 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-6 text-center">
-              <div className="space-y-4">
-                <Badge
-                  variant="secondary"
-                  className="mb-4 bg-secondary text-white"
-                >
-                  🎓 Trusted by 10,000+ Students
+        <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
+          {/* Background with modern gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/5 via-transparent to-purple-600/5"></div>
+
+          {/* Animated background elements */}
+          <div className="absolute top-20 left-10 w-32 h-32 bg-indigo-200/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+          <div className="container relative px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-8 text-center">
+              <div className="space-y-6">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 border-indigo-200 shadow-sm font-semibold text-sm">
+                  🎓 Trusted by 10,000+ Students Worldwide
                 </Badge>
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
                   Learn from
-                  <span className="text-primary"> College Athletes</span>
+                  <span className="bg-gradient-to-r from-indigo-600 to-indigo-800 bg-clip-text text-transparent">
+                    {" "}
+                    College Athletes
+                  </span>
                   <br />
-                  <span className="text-secondary">& Expert Coaches</span>
+                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    & Expert Coaches
+                  </span>
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-600 text-lg md:text-xl">
-                  Take courses designed for high schoolers and get personalized
-                  feedback from college athletes and coaches. Build skills, gain
-                  confidence, and prepare for your future.
+                <p className="mx-auto max-w-[750px] text-gray-700 text-xl md:text-2xl leading-relaxed font-medium">
+                  Transform your future with personalized courses designed for
+                  ambitious high schoolers. Get expert feedback, build
+                  confidence, and unlock your potential.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="h-12 px-8 bg-primary hover:bg-primary/90"
+                  className="h-14 px-10 text-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Start Learning Today
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-12 px-8 border-primary text-primary hover:bg-primary/5"
+                  className="h-14 px-10 text-lg font-semibold border-2 border-indigo-300 text-indigo-700 hover:bg-indigo-50 hover:border-indigo-400 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Browse Courses
                 </Button>
               </div>
-              <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-600">
-                <div className="flex items-center">
-                  <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  Free trial available
+              <div className="flex flex-col sm:flex-row items-center gap-8 text-base text-gray-600 pt-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <CheckCircle className="h-4 w-4 text-emerald-600" />
+                  </div>
+                  <span className="font-medium">Free trial available</span>
                 </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  Expert mentorship included
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <CheckCircle className="h-4 w-4 text-emerald-600" />
+                  </div>
+                  <span className="font-medium">
+                    Expert mentorship included
+                  </span>
                 </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  College prep focused
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <CheckCircle className="h-4 w-4 text-emerald-600" />
+                  </div>
+                  <span className="font-medium">College prep focused</span>
                 </div>
               </div>
             </div>
