@@ -572,15 +572,15 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <footer className="bg-gradient-to-r from-blue-900 to-slate-900 text-white">
         <div className="container px-4 md:px-6 py-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center group">
               <div className="relative">
-                <BookOpen className="h-8 w-8 text-indigo-400 group-hover:text-indigo-300 transition-colors duration-200" />
-                <div className="absolute inset-0 bg-indigo-400/20 rounded-full blur-lg group-hover:bg-indigo-300/30 transition-all duration-200 -z-10"></div>
+                <BookOpen className="h-8 w-8 text-orange-400 group-hover:text-orange-300 transition-colors duration-200" />
+                <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-lg group-hover:bg-orange-300/30 transition-all duration-200 -z-10"></div>
               </div>
-              <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-orange-400 to-blue-300 bg-clip-text text-transparent">
                 Prologue
               </span>
             </div>
@@ -591,28 +591,28 @@ export default function HomePage() {
                 href="#"
               >
                 Privacy Policy
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
                 href="#"
               >
                 Terms of Service
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
                 href="#"
               >
                 Contact Us
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
                 href="#"
               >
                 Help Center
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </nav>
           </div>
