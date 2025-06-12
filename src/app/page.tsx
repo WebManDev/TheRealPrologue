@@ -517,7 +517,7 @@ export default function HomePage() {
         {/* CTA Section */}
         <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
           {/* Modern gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-orange-500"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
           {/* Animated background elements */}
@@ -530,7 +530,7 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                   Ready to start your
                   <br />
-                  <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-orange-300 to-orange-200 bg-clip-text text-transparent">
                     journey?
                   </span>
                 </h2>
@@ -550,7 +550,7 @@ export default function HomePage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="h-14 px-8 bg-white text-indigo-600 hover:bg-gray-100 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
+                    className="h-14 px-8 bg-white text-blue-900 hover:bg-gray-100 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 transition-all duration-200"
                   >
                     Get Started Free
                   </Button>
