@@ -26,54 +26,54 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 px-4 lg:px-6 h-20 flex items-center backdrop-blur-lg bg-white/80 border-b border-gray-100 shadow-sm">
         <Link className="flex items-center justify-center group" href="#">
           <div className="relative">
-            <BookOpen className="h-9 w-9 text-indigo-600 group-hover:text-indigo-700 transition-colors duration-200" />
-            <div className="absolute inset-0 bg-indigo-600/20 rounded-full blur-lg group-hover:bg-indigo-700/30 transition-all duration-200 -z-10"></div>
+            <BookOpen className="h-9 w-9 text-blue-900 group-hover:text-blue-800 transition-colors duration-200" />
+            <div className="absolute inset-0 bg-blue-900/20 rounded-full blur-lg group-hover:bg-blue-800/30 transition-all duration-200 -z-10"></div>
           </div>
-          <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
             Prologue
           </span>
         </Link>
         <nav className="ml-auto flex gap-8">
           <Link
-            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            className="text-sm font-semibold text-gray-700 hover:text-blue-900 transition-all duration-200 relative group"
             href="#courses"
           >
             Courses
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            className="text-sm font-semibold text-gray-700 hover:text-blue-900 transition-all duration-200 relative group"
             href="#mentors"
           >
             Mentors
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            className="text-sm font-semibold text-gray-700 hover:text-blue-900 transition-all duration-200 relative group"
             href="#how-it-works"
           >
             How It Works
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            className="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-all duration-200 relative group"
+            className="text-sm font-semibold text-gray-700 hover:text-blue-900 transition-all duration-200 relative group"
             href="#testimonials"
           >
             Success Stories
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
         </nav>
         <div className="ml-8 flex gap-3">
           <Button
             variant="outline"
             size="sm"
-            className="border-gray-300 hover:border-indigo-300 hover:bg-indigo-50 text-gray-700 hover:text-indigo-700 font-semibold transition-all duration-200"
+            className="border-gray-300 hover:border-blue-300 hover:bg-blue-50 text-gray-700 hover:text-blue-900 font-semibold transition-all duration-200"
           >
             Log In
           </Button>
           <Button
             size="sm"
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+            className="bg-gradient-to-r from-blue-900 to-orange-500 hover:from-blue-800 hover:to-orange-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
           >
             Sign Up
           </Button>
