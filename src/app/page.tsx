@@ -380,13 +380,13 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
               <div className="space-y-4">
-                <Badge className="px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 border-purple-200 font-semibold">
+                <Badge className="px-4 py-2 bg-gradient-to-r from-orange-100 to-blue-100 text-blue-900 border-blue-200 font-semibold">
                   Success Stories
                 </Badge>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
                   What students are
                   <br />
-                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
                     saying
                   </span>
                 </h2>
@@ -417,9 +417,9 @@ export default function HomePage() {
                         width={50}
                         height={50}
                         alt="Student avatar"
-                        className="rounded-full border-2 border-indigo-100"
+                        className="rounded-full border-2 border-blue-100"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-full"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-blue-600/20 rounded-full"></div>
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 text-lg">
@@ -456,9 +456,9 @@ export default function HomePage() {
                         width={50}
                         height={50}
                         alt="Student avatar"
-                        className="rounded-full border-2 border-purple-100"
+                        className="rounded-full border-2 border-orange-100"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-full"></div>
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 text-lg">
@@ -495,9 +495,9 @@ export default function HomePage() {
                         width={50}
                         height={50}
                         alt="Student avatar"
-                        className="rounded-full border-2 border-emerald-100"
+                        className="rounded-full border-2 border-slate-100"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-teal-600/20 rounded-full"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-orange-500/20 rounded-full"></div>
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 text-lg">
