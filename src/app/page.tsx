@@ -572,40 +572,58 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-8 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-200 bg-white">
-        <div className="flex items-center">
-          <BookOpen className="h-5 w-5 text-primary mr-2" />
-          <span className="text-sm font-medium text-primary">Prologue</span>
+      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container px-4 md:px-6 py-12">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex items-center group">
+              <div className="relative">
+                <BookOpen className="h-8 w-8 text-indigo-400 group-hover:text-indigo-300 transition-colors duration-200" />
+                <div className="absolute inset-0 bg-indigo-400/20 rounded-full blur-lg group-hover:bg-indigo-300/30 transition-all duration-200 -z-10"></div>
+              </div>
+              <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                Prologue
+              </span>
+            </div>
+
+            <nav className="flex flex-wrap justify-center gap-8">
+              <Link
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
+                href="#"
+              >
+                Privacy Policy
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              <Link
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
+                href="#"
+              >
+                Terms of Service
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              <Link
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
+                href="#"
+              >
+                Contact Us
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              <Link
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-200 relative group"
+                href="#"
+              >
+                Help Center
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            </nav>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p className="text-gray-400 font-medium">
+              © 2024 Prologue. Empowering the next generation to achieve
+              greatness.
+            </p>
+          </div>
         </div>
-        <p className="text-xs text-gray-500 sm:ml-4">
-          © 2024 Prologue. Empowering the next generation.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:text-primary transition-colors"
-            href="#"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            className="text-xs hover:text-primary transition-colors"
-            href="#"
-          >
-            Terms of Service
-          </Link>
-          <Link
-            className="text-xs hover:text-primary transition-colors"
-            href="#"
-          >
-            Contact Us
-          </Link>
-          <Link
-            className="text-xs hover:text-primary transition-colors"
-            href="#"
-          >
-            Help Center
-          </Link>
-        </nav>
       </footer>
     </div>
   );
