@@ -161,7 +161,7 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-6xl">
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-2xl blur-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-orange-500/20 rounded-2xl blur-2xl transform group-hover:scale-105 transition-transform duration-300"></div>
                 <Image
                   src="/placeholder.svg?height=500&width=900"
                   width={900}
