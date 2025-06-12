@@ -175,24 +175,40 @@ export default function HomePage() {
         </section>
 
         {/* Stats Section */}
-        <section className="w-full py-12 bg-gray-50">
+        <section className="w-full py-20 bg-gradient-to-r from-gray-50 to-gray-100">
           <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary">10,000+</div>
-                <div className="text-sm text-gray-600">Students Enrolled</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-indigo-600 to-indigo-700 bg-clip-text text-transparent mb-2">
+                  10,000+
+                </div>
+                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                  Students Enrolled
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary">500+</div>
-                <div className="text-sm text-gray-600">College Mentors</div>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
+                  500+
+                </div>
+                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                  College Mentors
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-gray-600">Course Topics</div>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                  50+
+                </div>
+                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                  Course Topics
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary">95%</div>
-                <div className="text-sm text-gray-600">Success Rate</div>
+              <div className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
+                  95%
+                </div>
+                <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                  Success Rate
+                </div>
               </div>
             </div>
           </div>
